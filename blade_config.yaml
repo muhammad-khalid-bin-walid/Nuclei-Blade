@@ -1,0 +1,24 @@
+modes:
+  stealth:
+    tags: "xss,sqli,ssrf,lfi,rfi,idor"
+    severity: "high,critical"
+    rate_limit: 300
+    concurrency: 100
+    timeout: 0.5
+    noise_filter: true
+
+  surgical:
+    tags: "vuln,cve2025,auth,csrf,xxe,backup,config"
+    severity: "medium,high,critical"
+    rate_limit: 800
+    concurrency: 250
+    timeout: 0.75
+    noise_filter: true
+
+  aggressive:
+    tags: "cve,cve2020,cve2021,cve2022,cve2023,cve2024,cve2025,exposures,network,tokens,vuln,misconfig,ssl,dns,http,file,db,iot,cloud,api,graphql,auth,csrf,ssrf,xss,sqli,rce,lfi,rfi,idor,xxe,backup,config,exposed-panels,exposed-tokens,network-device,wordpress,drupal,joomla,php,laravel,apache,nginx,iis,tomcat,jboss,jenkins,git,aws,gcp,azure"
+    severity: "low,medium,high,critical"
+    rate_limit: 1500
+    concurrency: 600
+    timeout: 1.2
+    noise_filter: false
