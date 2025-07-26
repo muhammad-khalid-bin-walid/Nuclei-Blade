@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Nuclei Blade - Tactical Orchestrator
+# Nuclei Blade The Tactical Orchestrator
 # Made by DarkLegende
 # Optimized for speed and modularity, crafted for elite pentesters
 
